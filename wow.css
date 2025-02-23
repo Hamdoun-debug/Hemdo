@@ -1,0 +1,67 @@
+/* Default styles (for desktops) */
+body {
+    background-image: url("OIP.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    p {
+        font-size: 120px;
+        text-align: center;
+        padding: 100px;
+        color: darkred;
+    }
+}
+
+/* For tablets (widths below 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: contain;
+    }
+  
+    
+}
+h1{
+    color: rgb(160, 95, 122);
+}
+hr {
+    width: 100%; /* Adjust the width */
+    margin: auto; /* Centers the line */
+    border: 2px solid darkred /* Change color */
+}
+
+
+/* For mobile devices (widths below 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        background-size: contain;
+        background-position: top;
+    }
+    p {
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+        color: darkred;
+    }
+}
+audio {
+     
+     
+    background-color: black;
+    color: blue;
+    
+
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust text size for mobile */
+    }
+
+    p {
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    audio {
+        width: 100%; /* Make audio player full width */
+    }
+}
